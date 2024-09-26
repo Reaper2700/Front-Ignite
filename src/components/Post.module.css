@@ -1,0 +1,119 @@
+.post{
+    background: #202024;
+    border-radius: 8px;
+    padding: 2.5rem;
+
+}
+
+.post + .post{
+    margin-top: 2rem;
+}
+
+.content{
+    line-height: 1.6;
+    color: var(--gray-300);
+    margin-top: 1.5rem;
+}
+
+.content p{
+    margin-top: 1rem;
+}
+
+.content a{
+    font-weight: bold;
+    color: #00875f;
+    text-decoration: none;
+}
+
+.content a:hover{
+    transition: 0.3s;
+    color: #0fc78f;
+}
+
+.post > header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post > header time{
+    font-size: 0.875rem;
+    color: #8d8d99;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.authorinfor strong{
+    display: block;
+    color: #e1e1e6;
+    line-height: 1.6;
+}
+
+.authorinfor span{
+    display: block;
+    font-size: 0.875rem;
+    color: #8d8d99;
+    line-height: 1.6;
+}
+
+.commentform{
+    width: 100;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #323238;
+}
+
+.commentform > strong{
+    line-height: 1.6;
+    color: #e1e1e6;
+
+}
+
+.commentform textarea{
+    width: 100%;
+    background: #121214;
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #e1e1e6;
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+.commentform footer{
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentform:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.commentform button{
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    background: #00875f;
+    color:#e1e1e6;
+    font-weight: bold;
+    cursor: pointer;
+
+    
+}
+
+.commentform button:hover{
+    transition: 0.3s;
+    background: #0fc78f;
+}
+
+.commmentList{
+    margin-top: 2rem;
+}
